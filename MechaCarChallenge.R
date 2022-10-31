@@ -9,16 +9,16 @@ lm(formula = mpg ~ AWD, data = MechaCar_mpg)
 summary(MechaCar_mpg)
  
 #read.csv(file.choose())
-suspension_data <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors = F)
+#suspension_data <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors = F)
  
-total_summary <- suspension_data %>% summarize(Mean_PSI=mean(PSI),
-                                                Median_PSI=median(PSI),
-                                                Var_PSI=var(PSI),
-                                                Std_Dev_PSI=sd(PSI),
-                                                Num_Coil=n(), .groups = 'keep')
-lot_summary <- suspension_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),
-                                                                      Median_PSI=median(PSI),
-                                                                      Var_PSI=var(PSI),
-                                                                      Std_Dev_PSI=sd(PSI),
-                                                                      Num_Coil=n(), .groups = 'keep')
+#total_summary <- suspension_data %>% summarize(Mean_PSI=mean(PSI),
+#                                                Median_PSI=median(PSI),
+#                                                Var_PSI=var(PSI),
+#                                                Std_Dev_PSI=sd(PSI),
+#                                                Num_Coil=n(), .groups = 'keep')
+#lot_summary <- suspension_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),
+#                                                                      Median_PSI=median(PSI),
+#                                                                      Var_PSI=var(PSI),
+#                                                                      Std_Dev_PSI=sd(PSI),
+#                                                                      Num_Coil=n(), .groups = 'keep')
 
