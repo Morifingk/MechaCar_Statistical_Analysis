@@ -22,3 +22,8 @@ lot_summary <- suspension_data %>% group_by(Manufacturing_Lot) %>% summarize(Mea
                                                                       Std_Dev_PSI=sd(PSI),
                                                                       Num_Coil=n(), .groups = 'keep')
 
+?t.test()
+?t.test()
+
+t.test(lot_summary$Mean_PSI,mu=1500)
+
